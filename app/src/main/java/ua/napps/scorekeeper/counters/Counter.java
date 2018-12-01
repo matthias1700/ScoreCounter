@@ -11,7 +11,7 @@ public class Counter {
 
     private int defaultValue;
 
-    @PrimaryKey(autoGenerate = true)
+    @PrimaryKey (autoGenerate = true)
     private int id;
 
     private String name;

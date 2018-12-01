@@ -117,6 +117,8 @@ public class CountersAdapter extends RecyclerView.Adapter<CountersViewHolder> {
                 @Override
                 public boolean areContentsTheSame(int oldItemPosition, int newItemPosition) {
                     Counter newCounter = update.get(newItemPosition);
+                    System.out.println();
+                    System.out.println("Position of old item in database is " + oldItemPosition + "_________________________________");
                     Counter oldCounter = counters.get(oldItemPosition);
                     return newCounter.getId() == oldCounter.getId()
                             && Objects.equals(newCounter.getName(), oldCounter.getName())

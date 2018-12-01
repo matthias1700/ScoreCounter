@@ -132,7 +132,7 @@ public class CountersFragment extends Fragment implements CounterActionCallback 
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menu_add_counter:
-                if (viewModel.getCounters().getValue() != null) {
+                if (viewModel.getCounters().getValue()  != null) {
                     viewModel.addCounter();
                 } else {
                     subscribeUi();
