@@ -159,7 +159,6 @@ class CountersViewModel extends AndroidViewModel {
                 });
     }
 
-
     void removeAll() {
         List<Counter> counterList = counters.getValue();
         if (counterList != null) {
@@ -225,4 +224,5 @@ class CountersViewModel extends AndroidViewModel {
             return colors[nextCounterColor % colors.length];
         }
     }
+
 }
