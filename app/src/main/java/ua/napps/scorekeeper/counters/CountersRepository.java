@@ -8,7 +8,7 @@ import java.util.List;
 import io.reactivex.Completable;
 
 class CountersRepository {
-
+    boolean create = false;
     @NonNull
     private final CountersDao countersDao;
 

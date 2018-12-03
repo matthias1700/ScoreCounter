@@ -10,7 +10,7 @@ public class CounterTest {
     Counter counter;
     Counter counter2;
     @Before
-    public void setColor() {
+    public void set() {
     counter = new Counter("Futbal","black");
     counter2 = new Counter("Tenis", "white");
     counter.setValue(10);
